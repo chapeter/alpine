@@ -7,4 +7,4 @@ RUN apk update && apk upgrade && \
 RUN cp /usr/share/zoneinfo/America/Chicago /etc/localtime
 RUN echo "America/Chicago" > /etc/timezone
 
-apk del tzdata
+RUN apk del tzdata
