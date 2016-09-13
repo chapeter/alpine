@@ -8,3 +8,6 @@ RUN cp /usr/share/zoneinfo/America/Chicago /etc/localtime
 RUN echo "America/Chicago" > /etc/timezone
 
 RUN apk del tzdata
+
+RUN pip install --upgrade pip
+
